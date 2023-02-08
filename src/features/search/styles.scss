@@ -10,8 +10,12 @@
   padding: 0.2rem 0.5rem;
   font-size: 1rem;
   outline: none;
-  width: calc(28vw - 1rem);
-  min-width: 10rem;
+  width: calc(100vw - 12rem);
+  max-width: 30rem;
+
+  &::placeholder {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
 }
 
 .o-search__input:focus {
@@ -19,9 +23,15 @@
 }
 
 .o-search__icon {
-  width: 22px;
+  width: 15px;
   position: relative;
-  left: -30px;
-  bottom: -5px;
+  left: -25px;
+  bottom: -2px;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    left: -30px;
+    bottom: -3px;
+  }
 }

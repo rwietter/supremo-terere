@@ -17,6 +17,17 @@
   margin: 0 auto;
   transition: transform 0.4s ease-in-out;
   will-change: transform;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.c-products__content__textwrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .o-carousel__title {
@@ -26,11 +37,16 @@
   padding: 1rem;
   background: var(--accent-0);
   width: fit-content;
-  position: absolute;
   text-align: center;
-  top: 0;
+  margin: 0;
+}
 
-  @media screen and (min-width: var(--breakpoint-sm)) {
-    right: 400px;
-  }
+.o-products__content__price {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 400;
+  color: var(--text-base);
+  padding: 1rem;
+  background: var(--accent-0);
+  width: fit-content;
+  text-align: center;
 }

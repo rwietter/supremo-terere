@@ -1,0 +1,61 @@
+.l-description {
+  position: relative;
+  height: 400px;
+  background: var(--accent-9);
+  border-top: 1px solid var(--accent-0);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.c-description__title {
+  color: var(--accent-0);
+  word-wrap: break-word;
+  justify-self: flex-end;
+  padding-right: 2rem;
+
+  p {
+    font-size: clamp(2rem, 10vw, 5rem);
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+    text-align: end;
+    font-family: -apple-system,
+      system-ui,
+      BlinkMacSystemFont,
+      "Helvetica Neue",
+      "Helvetica",
+      sans-serif;
+  }
+}
+
+.c-description__description {
+  color: var(--accent-0);
+
+  max-width: 40rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin: 0;
+  font-weight: 100;
+
+  p {
+    margin: 0;
+  }
+
+  .o-description__link {
+    color: var(--accent-0);
+    text-decoration: none;
+    font-weight: 800;
+    display: block;
+    padding-top: 1rem;
+    transition: color 0.3s ease-in-out;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      color: var(--accent-3);
+    }
+  }
+}

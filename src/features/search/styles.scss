@@ -1,0 +1,27 @@
+.c-search {
+  padding: 0 .5rem;
+  position: relative;
+}
+
+.o-search__input {
+  height: 2.3rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  width: calc(28vw - 1rem);
+  min-width: 10rem;
+}
+
+.o-search__input:focus {
+  border-color: var(--accent-5)
+}
+
+.o-search__icon {
+  width: 22px;
+  position: relative;
+  left: -30px;
+  bottom: -5px;
+  cursor: pointer;
+}

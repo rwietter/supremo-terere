@@ -1,0 +1,36 @@
+.c-carousel {
+  background: var(--accent-9),
+}
+
+.c-carousel__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.o-carousel__image {
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  transition: transform 0.4s ease-in-out;
+  will-change: transform;
+}
+
+.o-carousel__title {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 800;
+  color: var(--text-base);
+  padding: 1rem;
+  background: var(--accent-0);
+  width: fit-content;
+  position: absolute;
+  text-align: center;
+  top: 0;
+
+  @media screen and (min-width: var(--breakpoint-sm)) {
+    right: 400px;
+  }
+}
